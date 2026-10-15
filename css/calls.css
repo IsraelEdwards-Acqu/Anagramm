@@ -1,0 +1,101 @@
+﻿.calls-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+}
+
+.calls-header {
+    margin-bottom: 24px;
+}
+
+    .calls-header h2 {
+        margin: 0;
+    }
+
+.calls-subtitle {
+    color: #64748b;
+}
+
+.incoming-call-banner {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.call-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.accept-btn {
+    flex: 1;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.decline-btn {
+    flex: 1;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.call-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.call-card {
+    background: white;
+    border-radius: 16px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.05);
+}
+
+    .call-card.incoming {
+        border-left: 5px solid #22c55e;
+    }
+
+    .call-card.outgoing {
+        border-left: 5px solid #2563eb;
+    }
+
+    .call-card.missed {
+        border-left: 5px solid #ef4444;
+    }
+
+.call-info {
+    display: flex;
+    flex-direction: column;
+}
+
+    .call-info small {
+        color: #64748b;
+    }
+
+.call-icon {
+    font-size: 1.2rem;
+}
+
+.empty-calls {
+    text-align: center;
+    padding: 60px;
+    color: #64748b;
+}
+
+    .empty-calls i {
+        font-size: 40px;
+        margin-bottom: 12px;
+    }

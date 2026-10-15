@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anagram</title>
+    <base href="/" />
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/chat-layout.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/updates.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <link rel="stylesheet" href="css/calls.css" />
+    <link rel="stylesheet" href="css/editprofile.css" />
+    <link rel="stylesheet" href="css/chat-layout.css" />
+    <link rel="stylesheet" href="css/updates.css" />
+
+
+    <!-- App Manifest & Icons -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="icon-64.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Meta Branding -->
+    <meta name="theme-color" content="#f9f9f9" />
+    <meta name="description" content="Anagram — fluid, modern communication hub." />
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loading-container">
+        <div class="loading-text">Loading…</div>
+    </div>
+
+    <!-- Blazor root: include a lightweight fallback UI so the page isn't blank -->
+    <div id="app">
+        <div class="app-fallback" style="padding:20px;text-align:center;color:#333;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;">
+            Initializing application… If this message persists, open the developer console (F12) for errors.
+        </div>
+    </div>
+
+    <noscript>
+        <div style="padding:16px;margin:16px auto;max-width:800px;color:#900;background:#fee;border:1px solid #f00;border-radius:6px;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;">
+            This application requires JavaScript. Please enable JavaScript in your browser and reload the page.
+        </div>
+    </noscript>
+
+    <!-- Blazor Runtime -->
+    <script src="_framework/blazor.webassembly.js"></script>
+
+    <!-- Robust loader / startup detection (handles auto-start and manual start safely) -->
+    <script>
+        (function () {
+            const container = document.querySelector('.loading-container');
+            const appRoot = document.getElementById('app');
+
+            function removeLoader() {
+                if (!container) return;
+                container.style.transition = 'opacity 0.25s ease';
+                container.style.opacity = '0';
+                setTimeout(() => container.remove(), 300);
+            }
+
+            function showError(message) {
+                if (!appRoot) return;
+                appRoot.innerHTML = '<div style="padding:20px;color:#900;background:#fee;border:1px solid #f00;border-radius:6px;max-width:720px;margin:24px auto;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;"><strong>' +
+                    message.replace(/</g, '&lt;') +
+                    '</strong><div style="margin-top:8px;color:#333;">Open developer console (F12) for details.</div></div>';
+            }
+
+            // If Blazor exposes start(), attempt to start but ignore the specific "already started" case.
+            if (window.Blazor && typeof Blazor.start === 'function') {
+                try {
+                    Blazor.start()
+                        .then(() => {
+                            removeLoader();
+                        })
+                        .catch(err => {
+                            // Silently ignore the benign "Blazor has already started." error and remove the loader.
+                            const msg = (err && err.message) ? err.message : String(err);
+                            if (msg.includes('already started')) {
+                                removeLoader();
+                                return;
+                            }
+                            console.error('Blazor failed to start:', err);
+                            showError('Failed to start the Blazor application. See console for details.');
+                            removeLoader();
+                        });
+                } catch (err) {
+                    const msg = (err && err.message) ? err.message : String(err);
+                    if (msg.includes('already started')) {
+                        // benign; runtime already running
+                        removeLoader();
+                    } else {
+                        console.error('Error while attempting to start Blazor:', err);
+                        showError('Failed to start the Blazor application. See console for details.');
+                        removeLoader();
+                    }
+                }
+            } else {
+                // No Blazor.start API visible — wait for DOM changes as fallback.
+                if (appRoot) {
+                    const observer = new MutationObserver((mutations, obs) => {
+                        if (appRoot.children.length > 0 && appRoot.textContent.trim().length > 0 && !appRoot.textContent.includes('Initializing application')) {
+                            obs.disconnect();
+                            removeLoader();
+                        }
+                    });
+                    observer.observe(appRoot, { childList: true, subtree: true });
+
+                    // Timeout to show helpful message if nothing renders
+                    setTimeout(() => {
+                        if (appRoot.children.length === 0 || (appRoot.children.length === 1 && appRoot.children[0].textContent.includes('Initializing application'))) {
+                            showError('The application did not initialize within the expected time. Check the developer console for errors.');
+                            removeLoader();
+                        }
+                    }, 5000);
+                } else {
+                    console.error('Missing #app element in index.html');
+                    removeLoader();
+                }
+            }
+        })();
+    </script>
+
+    <!-- Interop helpers -->
+    <script>
+        window.interop = {
+            scrollToBottom: (el) => {
+                try {
+                    if (!el) return;
+                    el.scrollTop = el.scrollHeight;
+                } catch (e) { /* ignore */ }
+            },
+            pickFile: async () => null,
+            capturePhoto: async () => null,
+            recordVoiceNote: async () => null
+        };
+    </script>
+
+    <script>
+        if ('serviceWorker' in navigator && !location.hostname.includes('localhost')) {
+            navigator.serviceWorker.register('service-worker.js').catch(function (err) {
+                console.warn('Service worker registration failed:', err);
+            });
+        }
+    </script>
+
+    <!-- Chat helpers -->
+    <script src="js/chat-helpers.js"></script>
+    <script src="js/interop.js"></script>
+</body>
+</html>
