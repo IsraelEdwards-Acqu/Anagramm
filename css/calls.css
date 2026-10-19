@@ -99,3 +99,18 @@
         font-size: 40px;
         margin-bottom: 12px;
     }
+@media (max-width:768px) {
+
+    .calls-page {
+        padding: 15px;
+    }
+
+    .call-actions {
+        flex-direction: column;
+    }
+
+    .accept-btn,
+    .decline-btn {
+        width: 100%;
+    }
+}

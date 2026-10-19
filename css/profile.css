@@ -250,3 +250,33 @@
     color: #2563eb;
     font-weight: 600;
 }
+@media (max-width:768px) {
+
+    .profile-container {
+        padding: 15px;
+    }
+
+    .profile-stats {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 12px;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+        .profile-actions button {
+            width: 100%;
+        }
+}
+.profile-timeline {
+    margin-top: 30px;
+}
+
+.timeline-update {
+    background: #f8fafc;
+    padding: 14px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}

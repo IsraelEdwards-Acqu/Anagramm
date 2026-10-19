@@ -1,0 +1,11 @@
+﻿.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #64748b;
+}
+
+    .empty-state i {
+        font-size: 52px;
+        margin-bottom: 15px;
+        color: #2563eb;
+    }
