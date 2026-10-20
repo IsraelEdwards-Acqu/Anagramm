@@ -1,0 +1,40 @@
+﻿.notifications-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.notifications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.notification-card {
+    display: flex;
+    gap: 16px;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 8px 18px rgba(0,0,0,.05);
+    cursor: pointer;
+}
+
+    .notification-card.unread {
+        border-left: 4px solid var(--primary);
+        background: #f8fbff;
+    }
+
+.notification-type {
+    font-size: 1.4rem;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+    .notification-content small {
+        color: var(--subtext);
+    }

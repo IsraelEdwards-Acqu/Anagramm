@@ -1,9 +1,9 @@
 self.assetsManifest = {
-  "version": "osy6CouD",
+  "version": "i7nyY+to",
   "assets": [
     {
-      "hash": "sha256-13+MKif8fENEYmowBJxbB0yN3y58bSfig0jg77C5XWM=",
-      "url": "_framework/Anagram.fq6v4iofdl.wasm"
+      "hash": "sha256-Qk8/jUf05Ssa1nxNeCHZzGe6aKrkRFQkueuabfrmgWo=",
+      "url": "_framework/Anagram.2oukbb0mwa.wasm"
     },
     {
       "hash": "sha256-ZFV6hDqPzBJdYRhwexn7bMUjJGv+ACsJbGigpkbtIdQ=",
@@ -30,8 +30,8 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.AspNetCore.Components.Forms.inhp4ncg0e.wasm"
     },
     {
-      "hash": "sha256-DVBnQlMlk6LQ7YZ/JoiVM2H0Sr8tFdJJnZN/MfqnFDk=",
-      "url": "_framework/Microsoft.AspNetCore.Components.Web.zor7g6ks9l.wasm"
+      "hash": "sha256-6cGHoTx2ipiew8gW2De1/biSu+XbG8XRJNd3R3FoPYw=",
+      "url": "_framework/Microsoft.AspNetCore.Components.Web.3liw41zjut.wasm"
     },
     {
       "hash": "sha256-CCFlWTo68y13+NZ52Tb+ja20PWzUjt271rFy4vCGM6g=",
@@ -270,8 +270,8 @@ self.assetsManifest = {
       "url": "_framework/System.Runtime.Serialization.Primitives.6wtja9krv9.wasm"
     },
     {
-      "hash": "sha256-JO9aXQO2G92oEEqqS8cOU0isttdzJHWDSJWKYinSZUQ=",
-      "url": "_framework/System.Runtime.gbsey61pgk.wasm"
+      "hash": "sha256-RN41ra4VSKgoZFDCYjmb0eARzx+SfaerR/ZsM5SlBu0=",
+      "url": "_framework/System.Runtime.sufo0alb96.wasm"
     },
     {
       "hash": "sha256-j30n5t1rkMXJ+JljqcSIrsfHYpGi8Id3hSse1xi47rg=",
@@ -306,7 +306,7 @@ self.assetsManifest = {
       "url": "_framework/System.Web.HttpUtility.95l3n86zqg.wasm"
     },
     {
-      "hash": "sha256-Ym/B8AfGKy4vPXXAvMHULgViIU4QvCvnRL3wyEqrsTM=",
+      "hash": "sha256-RtU2a6cbGjjJLoNW1ZM3L8SJTGkkZopBUb/3nWb4HfU=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -374,7 +374,7 @@ self.assetsManifest = {
       "url": "css/home.css"
     },
     {
-      "hash": "sha256-//DYmVkPEYdAAi8xHQyLKk54e4iTuDSsxDcqkIgmCHE=",
+      "hash": "sha256-6CYAwTxL2MKbOO6AxKX0wUp6zyZRZ3ReLJh/pdI/xV0=",
       "url": "css/loadingSpinner.css"
     },
     {
@@ -382,7 +382,11 @@ self.assetsManifest = {
       "url": "css/mainlayout.css"
     },
     {
-      "hash": "sha256-nU2GwCh6OJeKmYsqy14xyCvzEaQo0QMqy5FQZVTrR6g=",
+      "hash": "sha256-lqzSQN2PAe9VGiPJDq7jf0z6i8l2acjVGKt/hVh8SBo=",
+      "url": "css/notification.css"
+    },
+    {
+      "hash": "sha256-4WUP49QFG7PibdYLGnwZKHfEXYaquHIgz9bxdXFiPXE=",
       "url": "css/profile.css"
     },
     {
@@ -430,7 +434,7 @@ self.assetsManifest = {
       "url": "images/icon-64.png"
     },
     {
-      "hash": "sha256-rWLl8u81S91tK1HFGy/CR9y8CPoGXsoJMPLN44hz+kQ=",
+      "hash": "sha256-V8FNOlkUwD5BaYR9mzF30j2MY4IL+ruwrQSte7GGFak=",
       "url": "index.html"
     },
     {
