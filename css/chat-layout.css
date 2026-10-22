@@ -205,7 +205,22 @@
     color: #64748b;
     padding: 40px;
 }
+.receipt {
+    margin-left: 8px;
+    font-size: 11px;
+}
 
+.sent-status {
+    color: #9e9e9e;
+}
+
+.delivered-status {
+    color: #64b5f6;
+}
+
+.read-status {
+    color: #4caf50;
+}
 /* MOBILE */
 
 @media(max-width:900px) {
