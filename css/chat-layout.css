@@ -236,3 +236,88 @@
         max-width: 90%;
     }
 }
+.recording {
+    background: #ff4d4d;
+    color: white;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.voice-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.waveform {
+    color: #4caf50;
+    font-size: 18px;
+}
+
+.play-btn {
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+.voice-note {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+    .voice-note audio {
+        width: 250px;
+    }
+
+.voice-duration {
+    font-size: 12px;
+    opacity: .7;
+}
+.voice-note {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 240px;
+}
+
+    .voice-note audio {
+        width: 100%;
+    }
+
+.voice-duration {
+    font-size: 12px;
+    opacity: .7;
+}
+
+.recording {
+    background: #ff4d4d;
+    color: white;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
