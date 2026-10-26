@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "Anagram",
   "resources": {
-    "hash": "sha256-IZo25kA/xLkDoYUx/moZUnE6D2QG+rzZ8fcR/lGGumc=",
+    "hash": "sha256-wPyvEWjJlUBfOq0PQyz0keuJo7W4ZoxJVsCXkcsCdYk=",
     "fingerprinting": {
       "Blazored.LocalStorage.441nkrdpqq.wasm": "Blazored.LocalStorage.wasm",
       "Bunit.Core.28v3m6b6kc.wasm": "Bunit.Core.wasm",
       "Microsoft.AspNetCore.Authorization.o4uuzhfomh.wasm": "Microsoft.AspNetCore.Authorization.wasm",
-      "Microsoft.AspNetCore.Components.ge49y0hbp3.wasm": "Microsoft.AspNetCore.Components.wasm",
+      "Microsoft.AspNetCore.Components.qo8ojxy5y8.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Authorization.jqjser8uuu.wasm": "Microsoft.AspNetCore.Components.Authorization.wasm",
       "Microsoft.AspNetCore.Components.Forms.inhp4ncg0e.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.Web.2njlmfzfe4.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -79,7 +79,7 @@
       "System.fuo59yvmx8.wasm": "System.wasm",
       "netstandard.0796dch0sw.wasm": "netstandard.wasm",
       "System.Private.CoreLib.3znt714xi8.wasm": "System.Private.CoreLib.wasm",
-      "Anagram.in2a470vwc.wasm": "Anagram.wasm",
+      "Anagram.uat7gmwi0d.wasm": "Anagram.wasm",
       "dotnet.native.kn2ar8opy3.js": "dotnet.native.js",
       "dotnet.native.zapq7vo99z.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
@@ -110,7 +110,7 @@
       "Blazored.LocalStorage.441nkrdpqq.wasm": "sha256-ZFV6hDqPzBJdYRhwexn7bMUjJGv+ACsJbGigpkbtIdQ=",
       "Bunit.Core.28v3m6b6kc.wasm": "sha256-0p5F+nm6IvhSi7atKB8HdOQWleeI08w6hh/rcVtXNxQ=",
       "Microsoft.AspNetCore.Authorization.o4uuzhfomh.wasm": "sha256-+DRCLZiQKzrAKQ1d0B+bWeWFreM+eeovIGY4Cy9jxVM=",
-      "Microsoft.AspNetCore.Components.ge49y0hbp3.wasm": "sha256-eE8Q16rQHvb+Ov8ZxlbEfWy+DAC3nx3FyU3/+lhep78=",
+      "Microsoft.AspNetCore.Components.qo8ojxy5y8.wasm": "sha256-BkevU9wUO7mAvXGMUBLNi1/fc+UiDqBpXaNkZ/HGktk=",
       "Microsoft.AspNetCore.Components.Authorization.jqjser8uuu.wasm": "sha256-FZN7129tz5nw0AufrRjbQROTiVi+QKbFqlcP66mPhiw=",
       "Microsoft.AspNetCore.Components.Forms.inhp4ncg0e.wasm": "sha256-niXuybGrHoERGANlDsIKFVquZzxtSoHcJgyvCFO8kaA=",
       "Microsoft.AspNetCore.Components.Web.2njlmfzfe4.wasm": "sha256-UkcavMMdyDrvCC0FnbhEk+7u5BQqsn+NhNFGaZXeqBo=",
@@ -181,7 +181,7 @@
       "System.Web.HttpUtility.pmjojnqdte.wasm": "sha256-n/d84JQqqN37yxeh7nmFk5JQUEEnv3GAyDYANHRcFqQ=",
       "System.fuo59yvmx8.wasm": "sha256-+RGeMNzJKSWnf53s3f9WD9VoxGZWUh51oZnEQzh2PLk=",
       "netstandard.0796dch0sw.wasm": "sha256-9J7CraqxO4r1JZE1QS68SaVm7B6mL9Xh3hDqskVVEU0=",
-      "Anagram.in2a470vwc.wasm": "sha256-7uthLo4laBVbrZcJU0V+WirODiNBQYuUwG2uMF2pioY="
+      "Anagram.uat7gmwi0d.wasm": "sha256-6sfPn41OCgqj4/UB0A+p6PUDI5OamHpxKR3uYxROc4M="
     }
   },
   "cacheBootResources": true,
