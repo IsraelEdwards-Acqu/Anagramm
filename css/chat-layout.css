@@ -321,3 +321,146 @@
         transform: scale(1);
     }
 }
+@media (max-width: 900px) {
+
+    .app-shell {
+        position: relative;
+    }
+
+    .users-sidebar {
+        width: 100%;
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        background: white;
+    }
+
+    .chat-container {
+        width: 100%;
+        position: absolute;
+        inset: 0;
+        background: white;
+        z-index: 1;
+    }
+
+    .mobile-chat-open .users-sidebar {
+        display: none;
+    }
+
+    .mobile-chat-open .chat-container {
+        display: flex;
+        z-index: 20;
+    }
+
+    .mobile-back-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        border: none;
+        background: transparent;
+        font-size: 18px;
+    }
+}
+.mobile-back-btn {
+    display: none;
+}
+.people-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+    .people-tabs button {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background: #e5e7eb;
+    }
+
+.active-tab {
+    background: #2563eb !important;
+    color: white;
+}
+
+.friend-btn {
+    margin-left: auto;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+}
+
+.requests-panel {
+    padding: 12px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.request-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+.people-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+    .people-tabs button {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 12px;
+        background: #e5e7eb;
+    }
+
+.active-tab {
+    background: #2563eb !important;
+    color: white;
+}
+
+.friend-btn {
+    margin-left: auto;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+}
+
+.requests-panel {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.request-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.requests-panel {
+    background: #fff;
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+    .requests-panel h5 {
+        margin-bottom: 10px;
+    }
+
+.request-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+    .request-item span {
+        font-size: 14px;
+    }
