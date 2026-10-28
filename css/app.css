@@ -1,0 +1,40 @@
+.mobile-back-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .app-shell {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .users-sidebar,
+    .chat-container {
+        width: 100%;
+        min-width: 100%;
+        transition: transform 0.25s ease;
+    }
+
+    .chat-container {
+        display: none;
+    }
+
+    .app-shell.mobile-chat-open .users-sidebar {
+        display: none;
+    }
+
+    .app-shell.mobile-chat-open .chat-container {
+        display: flex;
+    }
+
+    .mobile-back-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+        border: 0;
+        background: transparent;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+}
