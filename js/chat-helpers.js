@@ -1,13 +1,19 @@
 ﻿window.anagram = window.anagram || {};
-window.anagram.scrollToBottom = (el) => {
-    if (!el) return;
+
+window.anagram.shareInvite = async () => {
+
+    if (!navigator.share)
+        return;
+
     try {
-        el.scrollTop = el.scrollHeight;
-    } catch (e) { /* ignore */ }
+
+        await navigator.share({
+            title: "Join me on Anagram",
+            text: "Let's communicate on Anagram.",
+            url: "https://anagram-peach.vercel.app"
+        });
+
+    }
+    catch {
+    }
 };
-navigator.share({
-    title: "Join me on Anagram",
-    text: "Let's communicate on Anagram.",
-    url: "https://anagram-peach.vercel.app",
-    url: "https://anagram.netlify.app"
-});
