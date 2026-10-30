@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Anagram",
   "resources": {
-    "hash": "sha256-snFkUZPSUB4trCpwOIolJyJsoRoE58aFe0vsWSU420I=",
+    "hash": "sha256-xPtWu49BCDluNbRfzXPyv4Ec9zlyY9Txhf/IfvP30us=",
     "fingerprinting": {
       "Blazored.LocalStorage.441nkrdpqq.wasm": "Blazored.LocalStorage.wasm",
       "Bunit.Core.28v3m6b6kc.wasm": "Bunit.Core.wasm",
@@ -79,7 +79,7 @@
       "System.fuo59yvmx8.wasm": "System.wasm",
       "netstandard.0796dch0sw.wasm": "netstandard.wasm",
       "System.Private.CoreLib.xj1q2tirg8.wasm": "System.Private.CoreLib.wasm",
-      "Anagram.w58yn97tla.wasm": "Anagram.wasm",
+      "Anagram.j2d5d0eax7.wasm": "Anagram.wasm",
       "dotnet.native.kn2ar8opy3.js": "dotnet.native.js",
       "dotnet.native.rkuh5eyypp.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
@@ -181,7 +181,7 @@
       "System.Web.HttpUtility.pmjojnqdte.wasm": "sha256-n/d84JQqqN37yxeh7nmFk5JQUEEnv3GAyDYANHRcFqQ=",
       "System.fuo59yvmx8.wasm": "sha256-+RGeMNzJKSWnf53s3f9WD9VoxGZWUh51oZnEQzh2PLk=",
       "netstandard.0796dch0sw.wasm": "sha256-9J7CraqxO4r1JZE1QS68SaVm7B6mL9Xh3hDqskVVEU0=",
-      "Anagram.w58yn97tla.wasm": "sha256-LLdmnvFLNM/Fq6Dg4RWwoN51+7HcfSCBPnVJduU84tQ="
+      "Anagram.j2d5d0eax7.wasm": "sha256-a15fnjd07ws7se8p7tW9rRQXDT1Spoh7n4ie7UBj1Ww="
     }
   },
   "cacheBootResources": true,
