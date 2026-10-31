@@ -104,6 +104,7 @@
     border-radius: 22px;
     padding: 15px 18px;
     box-shadow: 0 10px 25px rgba(0,0,0,.05);
+    position: relative;
 }
 
 .message-row.mine .msg-body {
@@ -464,3 +465,119 @@
     .request-item span {
         font-size: 14px;
     }
+
+.message-enter.mine {
+    animation: paper-wave-send 420ms ease-out both;
+    transform-origin: right bottom;
+}
+
+.message-enter.theirs {
+    animation: paper-wave-receive 520ms ease-out both;
+    transform-origin: left bottom;
+}
+
+@keyframes paper-wave-send {
+    0% {
+        opacity: 0;
+        transform: translate(28px, 18px) rotate(7deg) scale(.86);
+    }
+
+    55% {
+        opacity: 1;
+        transform: translate(-5px, -3px) rotate(-2deg) scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0) rotate(0) scale(1);
+    }
+}
+
+@keyframes paper-wave-receive {
+    0% {
+        opacity: 0;
+        transform: translate(-28px, -12px) rotate(-7deg) scale(.86);
+    }
+
+    55% {
+        opacity: 1;
+        transform: translate(5px, 2px) rotate(2deg) scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0) rotate(0) scale(1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .message-enter.mine,
+    .message-enter.theirs {
+        animation: none;
+    }
+}
+
+.message-options {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+}
+
+.msg-body {
+    position: relative;
+}
+
+.message-options-button {
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, .7);
+    font-size: .65rem;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.message-row.mine:hover .message-options-button,
+.message-options-button:focus {
+    opacity: 1;
+}
+
+.message-options-menu {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    z-index: 20;
+    min-width: 90px;
+    padding: 4px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .18);
+}
+
+.message-options-menu button {
+    width: 100%;
+    border: 0;
+    padding: 7px 10px;
+    text-align: left;
+    background: transparent;
+    cursor: pointer;
+}
+
+.edited-label,
+.view-once-label {
+    display: block;
+    margin-top: 3px;
+    font-size: .65rem;
+    opacity: .7;
+}
+
+@media (max-width: 900px) {
+    .message-options-button {
+        opacity: .7;
+        width: 28px;
+        height: 28px;
+    }
+
+    .message-options-menu {
+        font-size: .9rem;
+    }
+}
